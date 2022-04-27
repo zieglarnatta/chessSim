@@ -8,6 +8,21 @@ def knigh():
     #ifBLKnight
     #ifBRKnight
 
+def chessBoardList():
+    chessboard = []
+    for x in ("A", "B", "C", "D", "E", "F", "G", "H"):
+        for y in range(8):
+            y = y + 1
+            #y = str(y)
+            #z = x + y
+            #print(z)
+            #print(chessboard)
+            #chessboard.update({z:""})
+            chessboard.append([[x, y],""])
+            # rook
+    chessboard.append([['A', 1], "WLRook"])
+    print(chessboard)
+
 def chessBoard():
     chessboard = {}
     for x in range(8):
@@ -52,6 +67,7 @@ def assignSpaces():
     chessBoard.update({"12": "WLKnight"})
     print(chessboard)
 
-chessBoard()
+chessBoardList()
+#chessBoard()
 #assignSpaces()
 knigh()
